@@ -22,4 +22,4 @@ console.log(data2);
 //A: cara ganti nama variable dengan tambah titik 2 (:)
 const { street: jalan, city } = data.address;
 //Q: apakah bisa ganti value yang bertipe number?
-console.log(`${jalan}, ${city}`);
+console.log(`beralamat di jalan ${jalan}, ${city}`);

@@ -1,11 +1,44 @@
-const mtk = 70,
-  ipa = 80,
-  bahasaInggris = 40,
-  bahasaIndonesia = 50;
+const mtk = 12,
+  ipa = 100,
+  bahasaInggris = 100,
+  bahasaIndonesia = 12;
 
-// let rataRata = 101;
+// let rataRata = 112;
 let rataRata = (mtk + ipa + bahasaIndonesia + bahasaInggris) / 4;
 let grade;
+let hasil;
+
+if (mtk && ipa && bahasaInggris && bahasaIndonesia) {
+  if (typeof mtk != "number" || typeof ipa != "number" || typeof bahasaIndonesia != "number" || typeof bahasaInggris != "number") {
+    // console.log("nilai harus bertipe number");
+    hasil = "nilai harus bertipe number";
+  } else {
+    rataRata <= 100 && rataRata >= 90
+      ? (grade = "a")
+      : rataRata <= 89 && rataRata >= 80
+      ? (grade = "b")
+      : rataRata <= 79 && rataRata >= 70
+      ? (grade = "c")
+      : rataRata <= 69 && rataRata >= 60
+      ? (grade = "d")
+      : rataRata <= 59 && rataRata >= 0
+      ? (grade = "e")
+      : //kendala saat mengubah value rataRata menjadi 'eror' saat suatu kondisi saja
+        ((grade = "nilai tidak benar"), (rataRata = "nilai tidak benar"));
+    // (rataRata = "nilai tidak awok"),
+    hasil = `hasil: rata-rata = '${rataRata}' dengan grade = '${grade}'`;
+    // console.log(grade);
+  }
+} else {
+  // console.log("ada nilai yang kosong");
+  hasil = "ada nilai yang kosong";
+}
+
+console.log(hasil);
+// console.log(rataRata);
+// console.log(grade);
+
+// IF ELSE ======================================================
 
 // if (rataRata <= 100 && rataRata >= 90) {
 //   grade = "a";
@@ -18,10 +51,12 @@ let grade;
 // } else if (rataRata <= 59 && rataRata >= 0) {
 //   grade = "e";
 // } else {
-//   console.log("nilai tidak benar");
+//   // console.log("nilai tidak benar");
+//   grade = "tidak benar";
+//   rataRata = "tidak benar";
 // }
 
 // console.log(grade);
 
-rataRata >= 100 && rataRata <= 90 ? (grade = "a") : (grade = "b");
-console.log(grade);
+// rataRata >= 100 && rataRata <= 90 ? (grade = "a") : (grade = "b");
+// console.log(grade);
