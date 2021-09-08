@@ -21,5 +21,8 @@ console.log(data2);
 //Qa: apakah bisa mengganti nama variabelnya ? (street, city)
 //A: cara ganti nama variable dengan tambah titik 2 (:)
 const { street: jalan, city } = data.address;
+console.log(`beralamat di jalan '${jalan}', '${city}'`);
 //Q: apakah bisa ganti value yang bertipe number?
-console.log(`beralamat di jalan ${jalan}, ${city}`);
+//Q: apakah bisa ganti value dengan destructuring?
+// const { suite: "awokawo" } = data.address;
+// console.log(suite);

@@ -1,9 +1,9 @@
-const mtk = 12,
+const mtk = 100,
   ipa = 100,
   bahasaInggris = 100,
-  bahasaIndonesia = 12;
+  bahasaIndonesia = 19;
 
-// let rataRata = 112;
+//let rataRata = 80;
 let rataRata = (mtk + ipa + bahasaIndonesia + bahasaInggris) / 4;
 let grade;
 let hasil;
@@ -15,22 +15,24 @@ if (mtk && ipa && bahasaInggris && bahasaIndonesia) {
   } else {
     rataRata <= 100 && rataRata >= 90
       ? (grade = "a")
-      : rataRata <= 89 && rataRata >= 80
+      : rataRata < 90 && rataRata >= 80
       ? (grade = "b")
-      : rataRata <= 79 && rataRata >= 70
+      : rataRata < 80 && rataRata >= 70
       ? (grade = "c")
-      : rataRata <= 69 && rataRata >= 60
+      : rataRata < 70 && rataRata >= 60
       ? (grade = "d")
-      : rataRata <= 59 && rataRata >= 0
+      : rataRata < 60 && rataRata >= 0
       ? (grade = "e")
-      : //kendala saat mengubah value rataRata menjadi 'eror' saat suatu kondisi saja
+      : //KENDALA: saat mengubah value rataRata menjadi 'eror' saat suatu kondisi saja
         ((grade = "nilai tidak benar"), (rataRata = "nilai tidak benar"));
-    // (rataRata = "nilai tidak awok"),
+    // (rataRata = "nilai tidak benar"),
     hasil = `hasil: rata-rata = '${rataRata}' dengan grade = '${grade}'`;
     // console.log(grade);
   }
 } else {
   // console.log("ada nilai yang kosong");
+  //KENDALA :  jika ada nilai yang kosong, grade menjadi und sedangkan rata-rata tetap ada.
+  //hasil = `ada nilai yang kosong. rata-rata = ${rataRata}, grade = ${grade}`;
   hasil = "ada nilai yang kosong";
 }
 
