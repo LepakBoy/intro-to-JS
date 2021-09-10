@@ -1,1 +1,1 @@
-console.log(dataArray.length);
+console.log(hasil.slice(0, num));

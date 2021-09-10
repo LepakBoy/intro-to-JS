@@ -3,8 +3,8 @@
 const arr1 = ["film", "makan", "minum"];
 const arr2 = [1, 2, 3, 4, 5];
 const arr3 = [true, false];
-const newArr = arr1.concat(arr2, arr3);
-console.log(newArr);
+const newConcat = arr1.concat(arr2, arr3);
+console.log(newConcat);
 
 //2. FILTER = untuk mengembalikan element array yang sesuai dengan kriteria yang ditentukan oleh suatu function
 const arrFilter = [12, 34, 5, 67, 43, 8, 64, 3, 4, 89, 2];
@@ -34,7 +34,7 @@ const schoolList = [
   },
 ];
 const newSchooList = schoolList.filter(function (param) {
-  return param.name == "MA Al-Irsyad";
+  return param.name == "SDIT Al-Ishmah";
 });
 console.log(newSchooList);
 
@@ -53,4 +53,4 @@ const arrSlice = ["bejo", "udin", "budi", 2, 3, 4, true, null];
 console.log(arrSlice.slice(0, 3)); //mencetak array hanya dari index 0 sampai index 3-1
 console.log(arrSlice.slice(2)); //mencetak array dari index 2 smapai akhir
 
-//6.
+//6. MAP

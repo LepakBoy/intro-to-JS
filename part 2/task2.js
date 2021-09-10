@@ -18,11 +18,12 @@ const searchName = (filter, limit, cb) => {
   });
   cb(filteredName, limit);
   //argument filteredName diambil dari variabel yang dideklarasikan di dalam function yang sama dan dilempar ke parameter function limitedName sebagai parameter hasil
-  //argument ,imit diambil dari parameter limit dan dilempar sebagai argument ke parameter function limitedName
+  //argument limit diambil dari parameter limit dan dilempar sebagai argument ke parameter function limitedName sebagai parameter num
   // console.log(filteredName.slice(0, limit));
 };
 
 const limitedName = (hasil, num) => {
   console.log(hasil.slice(0, num));
 };
+
 searchName("an", 3, limitedName);
