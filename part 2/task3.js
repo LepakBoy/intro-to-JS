@@ -25,30 +25,4 @@ function seleksiNilai(dataAwal, dataAkhir, dataArray) {
   }
 }
 console.log(seleksiNilai(4, 15, [4, 5, 34, 13, 16, 9, 10]));
-
-// const dataAwal = 32,
-//   dataAkhir = 12,
-//   dataArray = [4, 5, 6, 7, 8, 16, 15, 12, 30];
-
-// if (dataAkhir < dataAwal) {
-//   console.log("akhir harus lebih gede");
-// }
-// if (dataArray.length < 5) {
-//   console.log("harus 5 lebih");
-// }
-
-// let result = dataArray.filter(function (x) {
-//   if (x > dataAwal && x < dataAkhir) {
-//     // console.log(x);
-//     return x;
-//   }
-// });
-
-// console.log(result);
-// console.log(result.length);
-
-// if (result.length == 0) {
-//   console.log("ga ada");
-// } else {
-//   console.log(result);
-// }
+console.log(seleksiNilai(6, 35, [4, 5, 14, 1, 7, 9, 10]));

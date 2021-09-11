@@ -53,4 +53,31 @@ const arrSlice = ["bejo", "udin", "budi", 2, 3, 4, true, null];
 console.log(arrSlice.slice(0, 3)); //mencetak array hanya dari index 0 sampai index 3-1
 console.log(arrSlice.slice(2)); //mencetak array dari index 2 smapai akhir
 
-//6. MAP
+//6. MAP = untuk memproses setiap element pada array dengan function yang digunakan dan mengembalikannya ke sebuah array baru
+const arrMap = [2, 3, 4, 5, 6];
+const newMap = arrMap.map(mapFunc);
+function mapFunc(num) {
+  return num * 2;
+}
+console.log(newMap);
+
+//7. POP = untuk mengapus indeks terakhir pada suatu array
+const arrPop = [2, 4, 6, "makan", true, "minum", "main game"];
+const newPop = arrPop.pop();
+console.log(newPop);
+console.log(arrPop);
+
+//8. PUSH = menambah nilai di akhir array
+const arrPush = [4, 5, 6, 3, "belajar", "nonton", false, "minum"];
+arrPush.push(10);
+console.log(arrPush);
+
+//9. toFIx = membulatkan angka sesuai dengan perintah
+let fix = 34.246677;
+console.log(fix.toFixed(3));
+console.log(fix.toFixed(2));
+console.log(fix.toFixed(1));
+
+//10 FLOOR = membulatkan bilangan number ke bawah
+let floor = 1.8;
+console.log(Math.floor(floor));

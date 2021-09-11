@@ -1,1 +1,1 @@
-console.log(hasil.slice(0, num));
+searchName
