@@ -22,7 +22,7 @@ gabungKalimat("fikri", "bekasi")
 const seleksiNiliai = (dataNilai) => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
-      filtered = dataNilai.filter((x) => {
+      dataNilai.filter((x) => {
         if (typeof x !== "number") {
           reject(new Error(`ada data yang bukan angka`));
         }
@@ -33,7 +33,7 @@ const seleksiNiliai = (dataNilai) => {
 };
 
 const filterNiliai = (filteredNilai) => {
-  return new Promise((resolve, result) => {
+  return new Promise((resolve, reject) => {
     setTimeout(() => {
       filterdata = filteredNilai.filter((data) => {
         return data < 70;
@@ -42,7 +42,7 @@ const filterNiliai = (filteredNilai) => {
     }, 1000);
   });
 };
-seleksiNiliai([1, 2, 4, 3, 12, 145, 23, 45, 56, 90, 100, 70])
+seleksiNiliai([1, 2, 4, "3", 12, 145, 23, 45, 56, 90, 100, 70])
   .then((dataNilai) => filterNiliai(dataNilai))
   .then((result) => {
     console.log(`ada ${result} nilai yang dibawah rata-rata`);

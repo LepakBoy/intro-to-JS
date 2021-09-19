@@ -40,5 +40,6 @@ const biodata = {
   interestInCoding: true,
 };
 
-const { skillName } = biodata.skills[1];
-console.log(skillName);
+console.log(biodata);
+// const { skillName } = biodata.skills[1];
+// console.log(skillName);

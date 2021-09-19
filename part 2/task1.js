@@ -62,7 +62,7 @@ function mapFunc(num) {
 console.log(newMap);
 
 //7. POP = untuk mengapus indeks terakhir pada suatu array
-const arrPop = [2, 4, 6, "makan", true, "minum", "main game"];
+const arrPop = [2, 4, 6, "makan", true, "minum", "main game", 89];
 const newPop = arrPop.pop();
 console.log(newPop);
 console.log(arrPop);

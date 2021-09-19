@@ -68,6 +68,6 @@ const hitungPajak = (pajak) => {
     return pajak;
   }
 };
-arkFood(75000, "DITRAKTIRDEMY", 13, false);
+arkFood(75000, "ARKAFOOD5", 13, false);
 //"ARKAFOOD5"
 //"DITRAKTIRDEMY"

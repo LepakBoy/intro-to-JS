@@ -1,9 +1,9 @@
-const mtk = 100,
-  ipa = 100,
-  bahasaInggris = 100,
-  bahasaIndonesia = 19;
+const mtk = 56,
+  ipa = 88,
+  bahasaInggris = 77,
+  bahasaIndonesia = 80;
 
-//let rataRata = 80;
+// let rataRata = ;
 let rataRata = (mtk + ipa + bahasaIndonesia + bahasaInggris) / 4;
 let grade;
 let hasil;

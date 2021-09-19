@@ -13,14 +13,14 @@ const getMonth = (callback) => {
 };
 
 //DENGAN FUNCTION KEDUA
-const showMonth = (isNull, month) => {
-  //jika isNull berisikan nilai, maka cetak isi nilainya(pesan error)
-  if (isNull) {
-    console.log(isNull);
-    // console.log(isNull)
+const showMonth = (isError, month) => {
+  //jika isError berisikan nilai, maka cetak isi nilainya(pesan error)
+  if (isError) {
+    console.log(isError);
+    // console.log(isError)
     return;
   }
-  //jika isNull tidak berisikan nilai, maka lakukan proses untuk variable month
+  //jika isError tidak berisikan nilai, maka lakukan proses untuk variable month
   console.log(
     month.map((x) => {
       return x;
@@ -31,10 +31,10 @@ getMonth(showMonth);
 
 //TANPA FUNCTION KEDUA
 //jika callback mengirimkan argument pertama maka jalankan proses di dalam if, jika tidak lanjutkan ke proses selanjutnya
-// getMonth((isNull, month) => {
-//   //jika error = true maka isNull berisikan pesan error
-//   if (isNull) {
-//     console.log(isNull);
+// getMonth((isError, month) => {
+//   //jika error = true maka isError berisikan pesan error
+//   if (isError) {
+//     console.log(isError);
 //   }
 //   console.log(
 //     month.map((x) => {
